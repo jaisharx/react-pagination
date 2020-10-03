@@ -10,3 +10,66 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* ====================== loading css ====================== */
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.load-wrap {
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.load .spinner {
+    animation: loadingI 2s linear infinite;
+}
+.load .bubble-1,
+.load .bubble-2 {
+    animation: bounce 2s ease-in-out infinite;
+}
+.load .bubble-2 {
+    animation-delay: -1s;
+}
+
+.spinner {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.bubble-1,
+.bubble-2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #4b9cdb;
+}
+
+.bubble-2 {
+    top: auto;
+    bottom: 0;
+}
+
+@keyframes loadingI {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
