@@ -1,6 +1,6 @@
 # React Pagination Example
 
-<!-- <img src="preview.png"> -->
+<img src="preview.png">
 
 In the project directory, you can run:
 
