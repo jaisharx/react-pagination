@@ -13,7 +13,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
                     <li key={number} className="page-item">
                         <a
                             onClick={() => paginate(number)}
-                            href="/react-pagination/!#"
                             className="page-link"
                         >
                             {number}
